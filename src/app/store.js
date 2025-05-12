@@ -1,15 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './app/App';
-import { store } from './app/store';
-import { Provider } from 'react-redux';
-import './assets/styles/global.css';
+// store.js
+import { configureStore } from '@reduxjs/toolkit';
+import authReducer from '../features/auth/authSlice';
+import destinationsReducer from '../features/destinations/destinationsSlice';
+import housesReducer from '../features/houses/housesSlice';
+import bookingsReducer from '../features/bookings/bookingsSlice';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </React.StrictMode>
-);
+// Create the store first, then export it
+const store = configureStore({
+  reducer: {
+    auth: authReducer,
+    destinations: destinationsReducer,
+    houses: housesReducer,
+    bookings: bookingsReducer,
+  },
+});
+
+export default store;

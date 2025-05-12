@@ -145,7 +145,7 @@ const Home = () => {
       <style jsx>{`
         .hero {
           height: 600px;
-          background-image: url('/assets/images/ui/hogwarts-hero.jpg');
+          background-image: url('/assets/images/hogwarts-hero.jpg');
           background-size: cover;
           background-position: center;
           position: relative;

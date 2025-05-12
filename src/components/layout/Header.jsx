@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { logout } from '../../features/auth/authSlice';
 import '../../assets/styles/header.css';
-import wizardingLogo from '../../assets/images/ui/logo.png';
+import wizardingLogo from '../../assets/images/logo.png';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './app/App';
-import { store } from './app/store';
+import store from './app/store'; // This matches the default export
 import { Provider } from 'react-redux';
 import './assets/styles/global.css';
 
