@@ -1,0 +1,108 @@
+:root {
+  --primary: #740001;
+  --primary-dark: #5a0000;
+  --secondary: #d3a625;
+  --secondary-dark: #ae8a1e;
+  --gryffindor-red: #740001;
+  --gryffindor-gold: #d3a625;
+  --slytherin-green: #1a472a;
+  --slytherin-silver: #5d5d5d;
+  --ravenclaw-blue: #0e1a40;
+  --ravenclaw-bronze: #946b2d;
+  --hufflepuff-yellow: #ecb939;
+  --hufflepuff-black: #372e29;
+  --text-dark: #333;
+  --text-light: #f8f8f8;
+  --background-light: #f8f8f8;
+  --background-dark: #333;
+  --font-primary: 'Cinzel', serif;
+  --font-secondary: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-secondary);
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary);
+  color: var(--text-light);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-dark);
+  color: var(--text-light);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  color: var(--text-dark);
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-dark);
+  color: var(--text-dark);
+}
+
+.main-content {
+  min-height: calc(100vh - 160px);
+  padding: 2rem 0;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.error-message {
+  color: var(--primary);
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(116, 0, 1, 0.1);
+  border-radius: 4px;
+  margin: 1rem 0;
+}
